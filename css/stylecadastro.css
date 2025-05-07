@@ -1,0 +1,89 @@
+/* Container geral com formulário + imagem lado a lado */
+.formulario-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilo para o bloco da imagem */
+  .imagem-personagem img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(113, 201, 248, 0.3);
+  }
+  
+  /* Ajusta botão voltar no topo esquerdo */
+  .botao-voltar {
+    background-color: #71c9f8;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #53b1e6;
+  }  
+  html, body {
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  @media (max-width: 768px) {
+    .formulario-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .imagem-personagem img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+  /* Botão principal do formulário */
+form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #71c9f8;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #71c9f8; /* azul claro */
+    border: none;
+    border-radius: 5px;
+    color: #000; /* texto preto */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #53b1e6; /* azul mais escuro no hover */
+  }  
+  
+  form input[type="submit"]:hover {
+    background-color: #53b1e6;
+  }  

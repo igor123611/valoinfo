@@ -1,0 +1,92 @@
+/* Fundo e fontes gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000; /* fundo preto */
+    color: #d0e7ff; /* azul claro */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #71c9f8;
+    text-shadow: 0 0 10px rgba(113, 201, 248, 0.5);
+  }
+  
+  /* Card do jogador */
+  .jogador-card {
+    background-color: #111;
+    border: 1px solid #71c9f8;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(113, 201, 248, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Imagem do jogador */
+  .jogador-card img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Informações do jogador */
+  .jogador-info {
+    flex: 1;
+  }
+  
+  .jogador-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #71c9f8;
+  }
+  
+  .jogador-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .botao-voltar {
+    background-color: #71c9f8;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #53b1e6;
+  }
+  @media (max-width: 768px) {
+    .formulario-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .imagem-personagem img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+   

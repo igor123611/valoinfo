@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" type="text/css"  href="css/stylecadastro.css">
+</head>
+<body>
+  <button onclick="history.back()" class="botao-voltar">⬅ Voltar</button>
+
+  <section id="cadastro" class="formulario-container">
+    <div class="formulario">
+      <h2>Cadastre-se</h2>
+      <form action="processa_cadastro.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <input type="submit" value="Cadastrar">
+      </form>
+    </div>
+
+    <div class="imagem-personagem">
+      <img src="imagens/jett-css-full.webp" alt="Jett cadastro">
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Aba de chat */
+.chat-box {
+    background-color: #111111;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 0 15px #00BFFF44;
+  }
+  
+  .chat-box h2 {
+    color: #00BFFF;
+    margin-bottom: 20px;
+  }
+  
+  .chat-window {
+    background-color: #000000;
+    border: 1px solid #00BFFF;
+    padding: 15px;
+    height: 200px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 0.95em;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #00BFFF;
+    border-radius: 8px;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .chat-input button {
+    background-color: #00BFFF;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: #000000;
+    font-weight: bold;
+    cursor: not-allowed;
+  }
+  html, body {
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .botao-voltar {
+    background-color: #71c9f8;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-voltar:hover {
+    background-color: #53b1e6;
+  }
+  @media (max-width: 768px) {
+    .formulario-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .imagem-personagem img {
+      max-width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      width: 100%;
+      max-width: 90%;
+    }
+  }
+   

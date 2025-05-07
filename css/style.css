@@ -1,0 +1,166 @@
+/* Seção de Introdução */
+.introducao {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.introducao h2 {
+  color: #00BFFF;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.introducao p {
+  font-size: 1.1em;
+  color: #dddddd;
+  margin-bottom: 20px;
+}
+
+.introducao a {
+  text-decoration: none;
+  color: #00BFFF;
+  font-weight: bold;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Garante fundo preto em toda a tela */
+html, body {
+  height: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Esconde todas as abas por padrão */
+.aba {
+  display: none;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Mostra a aba quando o id está no URL */
+.aba:target {
+  display: block;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #000000;
+  border-bottom: 2px solid #00BFFF;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: #00BFFF;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00BFFF;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #0099cc;
+}
+
+/* Footer */
+footer {
+  background-color: #111111;
+  color: #888888;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+}
+
+/* Hero Section com Jett */
+.hero-jett {
+  background-color: #111111;
+  padding: 50px 20px;
+  border-bottom: 2px solid #00BFFF;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero-texto h2 {
+  color: #00BFFF;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.hero-texto p {
+  color: #dddddd;
+  font-size: 1.1em;
+}
+
+.hero-imagem img {
+  max-width: 250px;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .hero-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .hero-texto {
+    flex: 1;
+  }
+
+  .hero-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+.balao-fala {
+  position: absolute;
+  background: #00BFFF;
+  color: #000000;
+  padding: 10px 15px;
+  border-radius: 20px;
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 0.95em;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px #00BFFF66;
+  text-align: center;
+}
+
+.hero-imagem {
+  position: relative;
+  display: inline-block;
+}
